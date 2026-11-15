@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCANNER CYBER OG</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;900&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+
+    <header id="topNav">
+        <a href="#mainHero" class="brand-text">
+            <i class="fa-solid fa-laugh-beam"></i> SCANNER<span>MEME</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#mainHero">Home</a></li>
+            <li><a href="#memes">Memes</a></li>
+            <li><a href="#videos">Clips</a></li>
+            <li><a href="#audio">Audio FX</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="add-btn" id="openUploadModal">
+                <i class="fa-solid fa-plus"></i> Add Media
+            </button>
+            <a href="#memes" class="top-btn">Explore</a>
+        </div>
+    </header>
+
+    <section id="mainHero">
+        <h1>Humor & Funny <em>Media Hub</em></h1>
+
+        <div class="search-area">
+            <div class="search-field">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="findInput" placeholder="Search funny content...">
+            </div>
+
+
+
+            <div class="filter-tags">
+                <button class="tag-btn active" data-type="all">All</button>
+                <button class="tag-btn" data-type="meme">Memes</button>
+                <button class="tag-btn" data-type="video">Videos</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <h2 class="content-header" id="memes">
+        <i class="fa-solid fa-fire"></i> Trending Memes & Clips
+    </h2>
+    
+    <div class="grid-wrapper" id="contentGrid">
+        
+        
+        <div class="grid-card" data-cat="meme" data-name="meme yako 1">
+            <div class="media-box open-feed">
+                <span class="type-tag">Meme</span>
+                <img src="CHAZI2.jpg" alt="Meme 1">
+            </div>
+
+
+
+            <div class="card-info">
+                <h3>scanner meme1🤣</h3>
+                <p>utaifanyia nini niambie katika comment.</p>
+                <div class="card-actions">
+                    <div class="action-group">
+                        <span class="like-counter"><i class="fa-solid fa-heart"></i> <span class="val">120</span></span>
+                        <span class="comment-trigger open-feed"><i class="fa-solid fa-comment"></i> <span class="c-val">2</span></span>
+                        <span class="share-trigger"><i class="fa-solid fa-share"></i></span>
+                    </div>
+                    <button class="view-btn open-feed"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        
+        <div class="grid-card" data-cat="video" data-name="video yako 1" id="videos">
+            <div class="media-box open-feed">
+                <span class="type-tag">Video</span>
+                <video src="PORT1.mp4" muted loop onmouseover="this.play()" onmouseout="this.pause()"></video>
+            </div>
+            <div class="card-info">
+                <h3>Scanner video1 🤣😇</h3>
+                <p>Da so kwa hiyo sala   ebu ona🤣</p>
+                <div class="card-actions">
+                    <div class="action-group">
+                        <span class="like-counter"><i class="fa-solid fa-heart"></i> <span class="val">340</span></span>
+                        <span class="comment-trigger open-feed"><i class="fa-solid fa-comment"></i> <span class="c-val">2</span></span>
+                        <span class="share-trigger"><i class="fa-solid fa-share"></i></span>
+                    </div>
+                    <button class="view-btn open-feed"><i class="fa-solid fa-play"></i></button>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+
+        <div class="grid-card" data-cat="meme" data-name="meme yako 2">
+            <div class="media-box open-feed">
+                <span class="type-tag">Meme</span>
+                <img src="CHAZI1.jpg" alt="Meme 2">
+
+            </div>
+
+
+
+
+
+
+
+            <div class="card-info">
+                <h3>Scanner meme2 🤣</h3>
+                <p>haya mmefikiwa sasa  mimi sisemi🤣🤣.</p>
+                <div class="card-actions">
+                    <div class="action-group">
+                        <span class="like-counter"><i class="fa-solid fa-heart"></i> <span class="val">215</span></span>
+                        <span class="comment-trigger open-feed"><i class="fa-solid fa-comment"></i> <span class="c-val">2</span></span>
+                        <span class="share-trigger"><i class="fa-solid fa-share"></i></span>
+                    </div>
+                    <button class="view-btn open-feed"><i class="fa-solid fa-expand"></i></button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="grid-card" data-cat="video" data-name="video yako 2">
+            <div class="media-box open-feed">
+                <span class="type-tag">Video</span>
+                <video src="PORT2.mp4" muted loop onmouseover="this.play()" onmouseout="this.pause()"></video>
+            </div>
+
+
+
+
+            <div class="card-info">
+                <h3>Scanner video2 🤣🙁</h3>
+                <p>Nitajie jina la lecture wako mwenye tabia kama hii😁😁.</p>
+                <div class="card-actions">
+                    <div class="action-group">
+                        <span class="like-counter"><i class="fa-solid fa-heart"></i> <span class="val">510</span></span>
+                        <span class="comment-trigger open-feed"><i class="fa-solid fa-comment"></i> <span class="c-val">2</span></span>
+                        <span class="share-trigger"><i class="fa-solid fa-share"></i></span>
+                    </div>
+                    <button class="view-btn open-feed"><i class="fa-solid fa-play"></i></button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        
+
+
+    </div>
+
+
+   
+
+
+
+
+
+
+    <h2 class="content-header" id="audio">
+        <i class="fa-solid fa-volume-high"></i> Soundboard Clips
+    </h2>
+    
+    <div class="audio-container">
+        <div class="sound-board" id="soundBoardGrid">
+            
+            <div class="sound-item" onclick="toggleAudio('BAD1.mp3', this)">
+                <div>
+                    <h4>Wenzako washaonekana🤣</h4>
+                    <span>Sound meme1</span>
+                </div>
+                <div class="btn-play"><i class="fa-solid fa-play"></i></div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="sound-item" onclick="toggleAudio('BAD2.mp3', this)">
+                <div>
+                    <h4>Ila presentation🤣</h4>
+                    <span>sound meme</span>
+                </div>
+                <div class="btn-play"><i class="fa-solid fa-play"></i></div>
+            </div>
+
+            <div class="sound-item" onclick="toggleAudio('BAD3.mp3', this)">
+                <div>
+                    <h4>Ety scanner ulikuwepo🤣</h4>
+                    <span>Sound meme3</span>
+                </div>
+                <div class="btn-play"><i class="fa-solid fa-play"></i></div>
+            </div>
+
+
+
+
+
+
+            <div class="sound-item" onclick="toggleAudio('BAD4.mp3', this)">
+                <div>
+                    <h4>Injinia soma iyo🤣</h4>
+                    <span>Kimeumana</span>
+                </div>
+                <div class="btn-play"><i class="fa-solid fa-play"></i></div>
+            </div>
+
+
+
+
+        
+            <div class="sound-item" onclick="toggleAudio('BAD 5.mp3', this)">
+                <div>
+                    <h4>Ety Alaaa alaaaa🤣</h4>
+                    <span>Sound meme ☺️</span>
+                </div>
+                <div class="btn-play"><i class="fa-solid fa-play"></i></div>
+            </div>
+
+        </div>
+
+
+
+
+        
+
+
+    </div>
+
+
+
+
+
+
+    <div class="tiktok-overlay" id="tiktokOverlay">
+        <button class="tk-close" id="closeTikTok">&times;</button>
+        <div class="tk-feed" id="tkFeed"></div>
+
+        
+
+
+
+        <div class="comment-drawer" id="commentDrawer">
+            <div class="drawer-head">
+                <h4>Maoni (<span id="drawerCount">0</span>)</h4>
+                <button id="closeDrawer">&times;</button>
+            </div>
+            <div class="comment-list" id="commentList"></div>
+            <form class="comment-form" id="commentForm">
+                <input type="text" id="commentInput" placeholder="Andika comment yako hapa..." required>
+                <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+
+    
+
+
+
+    <div class="pop-viewer" id="uploadModal">
+        <div class="pop-box modal-small">
+            <button class="pop-close" id="closeUploadModal">&times;</button>
+            <form class="upload-form" id="addMediaForm">
+                <h3><i class="fa-solid fa-cloud-arrow-up"></i> Add Funny Media</h3>
+                <label>Chagua Aina</label>
+                <select id="mediaType" required>
+                    <option value="meme">Meme (Picha)</option>
+                    <option value="video">Video Clip</option>
+                    <option value="audio">Audio / Sauti ya Kicheko</option>
+                </select>
+
+
+
+
+
+                <label>Kichwa cha Habari</label>
+                <input type="text" id="mediaTitle" placeholder="Mfano: Kicheko cha Mjomba..." required>
+                <label id="descLabel">Maelezo Mafupi</label>
+                <textarea id="mediaDesc" rows="2" placeholder="Andika utani mfupi hapa..."></textarea>
+                <label>Chagua Faili (Simu/PC)</label>
+                <input type="file" id="mediaFile" accept="image/*,video/*,audio/*" required>
+                <button type="submit" class="top-btn submit-full">Weka Kwenye Jukwaa</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <div class="toast-msg" id="toastMsg">Link imenakiliwa! Tayari kushare 🔥</div>
+
+    <footer>
+        <p>SCANNER MEME &copy; 2026. Built by Charles Alfa Mlahagwa</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
