@@ -9,14 +9,6 @@ const drawerCount = document.getElementById('drawerCount');
 let activeSlideIndex = 0;
 let mediaComments = {};
 
-
-
-
-
-
-
-
-
 tags.forEach(t => {
     t.onclick = () => {
         tags.forEach(b => b.classList.remove('active'));
@@ -28,24 +20,12 @@ tags.forEach(t => {
         });
     };
 });
-
-
-
-
-
 document.getElementById('findInput').onkeyup = e => {
     const q = e.target.value.toLowerCase();
     document.querySelectorAll('.grid-card').forEach(c => {
         c.style.display = c.dataset.name.includes(q) ? 'flex' : 'none';
     });
 };
-
-
-
-
-
-
-
 
 function triggerShare(title) {
     if (navigator.share) {
@@ -57,13 +37,6 @@ function triggerShare(title) {
         setTimeout(() => toast.classList.remove('show'), 2500);
     }
 }
-
-
-
-
-
-
-
 
 grid.onclick = e => {
     const card = e.target.closest('.grid-card');
@@ -89,10 +62,6 @@ grid.onclick = e => {
         openTikTokFeed(cards, clickedIndex);
     }
 };
-
-
-
-
 
 function openTikTokFeed(cards, startIndex) {
     tkFeed.innerHTML = '';
@@ -144,12 +113,6 @@ function openTikTokFeed(cards, startIndex) {
             </div>
         `;
 
-        
-
-
-
-
-
         slide.querySelector('.tk-like').onclick = function () {
             const liked = this.classList.toggle('liked');
             const span = this.querySelector('span');
@@ -161,18 +124,11 @@ function openTikTokFeed(cards, startIndex) {
             gridLike.querySelector('.val').textContent = newCount;
         };
 
-      
-        
-
         slide.querySelector('.tk-comment').onclick = () => {
             activeSlideIndex = idx;
             renderComments(idx);
             commentDrawer.classList.add('open');
         };
-
-       
-        
-
         slide.querySelector('.tk-share').onclick = () => triggerShare(title);
 
         tkFeed.appendChild(slide);
@@ -185,11 +141,6 @@ function openTikTokFeed(cards, startIndex) {
         handleSlidePlayback();
     }
 }
-
-
-
-
-
 function handleSlidePlayback() {
     const slides = document.querySelectorAll('.tk-slide');
     slides.forEach(slide => {
@@ -219,10 +170,7 @@ document.getElementById('closeTikTok').onclick = () => {
     tkOverlay.style.display = 'none';
     commentDrawer.classList.remove('open');
     tkFeed.querySelectorAll('video').forEach(v => v.pause());
-};
-
-
-
+}
 
 function renderComments(idx) {
     const list = mediaComments[idx] || [];
@@ -258,12 +206,6 @@ document.getElementById('commentForm').onsubmit = e => {
 
     input.value = '';
 };
-
-
-
-
-
-
 let activeAudio = null;
 let activeBtn = null;
 
@@ -305,11 +247,6 @@ function toggleAudio(src, element) {
         activeBtn = null;
     };
 }
-
-
-
-
-
 
 const upModal = document.getElementById('uploadModal');
 const mType = document.getElementById('mediaType');
