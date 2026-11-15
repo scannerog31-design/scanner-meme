@@ -23,13 +23,6 @@ body {
     overflow-x: hidden;
 }
 
-
-
-
-
-
-
-
 #topNav {
     position: fixed;
     top: 0;
@@ -56,13 +49,6 @@ body {
     gap: 8px;
 }
 
-
-
-
-
-
-
-
 .brand-text span {
     color: var(--neon);
 }
@@ -81,15 +67,6 @@ body {
     text-transform: uppercase;
     transition: 0.2s;
 }
-
-
-
-
-
-
-
-
-
 
 .nav-links a:hover {
     color: var(--neon);
@@ -113,14 +90,6 @@ body {
     border: none;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
 
 .add-btn {
     background: transparent;
@@ -146,13 +115,6 @@ body {
     background: radial-gradient(circle at 50% 20%, rgba(0, 255, 102, 0.08) 0%, transparent 60%);
 }
 
-
-
-
-
-
-
-
 #mainHero h1 {
     font-family: 'Outfit', sans-serif;
     font-size: 2.5rem;
@@ -172,14 +134,6 @@ body {
     margin: 0 auto 1rem;
     font-size: 0.95rem;
 }
-
-
-
-
-
-
-
-
 .search-area {
     max-width: 600px;
     margin: 0 auto;
@@ -203,12 +157,6 @@ body {
     font-size: 0.9rem;
 }
 
-
-
-
-
-
-
 .search-field i {
     position: absolute;
     left: 1rem;
@@ -223,11 +171,6 @@ body {
     gap: 0.5rem;
     flex-wrap: wrap;
 }
-
-
-
-
-
 
 .tag-btn {
     background: var(--panel);
@@ -256,13 +199,6 @@ body {
     gap: 8px;
 }
 
-
-
-
-
-
-
-
 .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -286,12 +222,6 @@ body {
     border-color: var(--neon);
     background: var(--hover);
 }
-
-
-
-
-
-
 
 .media-box {
     position: relative;
@@ -321,14 +251,6 @@ body {
     text-transform: uppercase;
     z-index: 2;
 }
-
-
-
-
-
-
-
-
 
 .card-info {
     padding: 0.8rem;
@@ -364,13 +286,6 @@ body {
     gap: 12px;
 }
 
-
-
-
-
-
-
-
 .like-counter,
 .comment-trigger,
 .share-trigger {
@@ -396,11 +311,6 @@ body {
     color: var(--neon);
 }
 
-
-
-
-
-
 .view-btn {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid var(--line);
@@ -423,13 +333,6 @@ body {
 .audio-container {
     padding: 0 5% 3rem;
 }
-
-
-
-
-
-
-
 
 
 .sound-board {
@@ -472,13 +375,6 @@ body {
 
 
 
-
-
-
-
-
-
-
 .btn-play {
     width: 30px;
     height: 30px;
@@ -495,8 +391,6 @@ body {
     background: var(--neon);
     color: #000;
 }
-
-
 
 .tiktok-overlay {
     display: none;
@@ -524,12 +418,6 @@ body {
 
 
 
-
-
-
-
-
-
 .tk-close:hover {
     background: var(--pink);
 }
@@ -545,13 +433,6 @@ body {
 .tk-feed::-webkit-scrollbar {
     display: none;
 }
-
-
-
-
-
-
-
 
 .tk-slide {
     height: 100vh;
@@ -575,11 +456,6 @@ body {
     justify-content: center;
     background: #000;
 }
-
-
-
-
-
 
 .tk-media-wrap img,
 .tk-media-wrap video {
@@ -618,13 +494,6 @@ body {
     z-index: 5;
 }
 
-
-
-
-
-
-
-
 .tk-btn {
     display: flex;
     flex-direction: column;
@@ -651,13 +520,6 @@ body {
     transition: 0.2s;
 }
 
-
-
-
-
-
-
-
 .tk-btn.liked i {
     color: var(--pink);
     background: rgba(255, 0, 85, 0.2);
@@ -666,10 +528,6 @@ body {
 .tk-btn:hover i {
     transform: scale(1.1);
 }
-
-
-
-
 
 .comment-drawer {
     position: fixed;
@@ -687,13 +545,6 @@ body {
     flex-direction: column;
     transition: bottom 0.3s ease;
 }
-
-
-
-
-
-
-
 
 .comment-drawer.open {
     bottom: 0;
@@ -714,13 +565,6 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
 }
-
-
-
-
-
-
-
 
 .comment-list {
     flex-grow: 1;
@@ -756,15 +600,6 @@ body {
     display: flex;
     gap: 8px;
 }
-
-
-
-
-
-
-
-
-
 .comment-form input {
     flex-grow: 1;
     padding: 0.75rem 1rem;
@@ -785,9 +620,6 @@ body {
     cursor: pointer;
 }
 
-
-
-
 .pop-viewer {
     display: none;
     position: fixed;
@@ -798,14 +630,6 @@ body {
     align-items: center;
     padding: 2rem;
 }
-
-
-
-
-
-
-
-
 
 .pop-box {
     background: var(--panel);
@@ -853,13 +677,6 @@ body {
     margin-bottom: -6px;
 }
 
-
-
-
-
-
-
-
 .upload-form input,
 .upload-form select,
 .upload-form textarea {
@@ -893,12 +710,6 @@ body {
     z-index: 20000;
     transition: transform 0.3s ease;
 }
-
-
-
-
-
-
 
 .toast-msg.show {
     transform: translateX(-50%) translateY(0);
